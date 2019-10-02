@@ -11,6 +11,7 @@ lein run leapyears 2016
 lein run rpn-calculator 3 5 8 \* 7 + \*
 lein run roman-numerals 789
 lein run hangman airplane ajkei
+lein run wind N NE
 ```
 
 ## FizzBuzz
@@ -44,3 +45,12 @@ Source: https://josepaumard.github.io/katas/intermediate/romannumerals-kata.html
 Given two words as input, where the words each match `[a-z]+`, output the current state of the hangman game as ASCII art. The first is to be guessed, the second word is the already-guessed letters.
 
 Source: https://codegolf.stackexchange.com/questions/135936/ascii-hangman-in-progress
+
+## Wind directions
+
+Given two cardinal wind directions, write a function that calculates the overlap: how much are they in the same direction?
+
+Examples:
+
+- If I am cycling towards North, and the wind is going towards South, then I have a 0% overlap with its direction. The function should return `0` when given `N` and `S`.
+- If I am cycling towards North, and the wind is going towards North-East, then I have a 75% overlap with its direction. The function should return `0.75` when given `N` and `NE`.

@@ -6,6 +6,7 @@
     [katas.rpn-calculator :refer [rpn-evaluate]]
     [katas.roman-numerals :refer [decimal->roman]]
     [katas.hangman :refer [hangman]]
+    [katas.wind :refer [cardinal-overlap]]
     [clojure.string :refer [join]]))
 
 (def katas [
@@ -36,6 +37,11 @@
   {
     :name "hangman"
     :fn hangman
+    :arity 2
+  }
+  {
+    :name "wind"
+    :fn cardinal-overlap
     :arity 2
   }
 ])
