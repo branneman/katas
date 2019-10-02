@@ -1,7 +1,8 @@
 (ns katas.main
   (:gen-class)
   (:require
-    [katas.fizzbuzz :refer [fizzbuzz]]))
+    [katas.fizzbuzz :refer [fizzbuzz]]
+    [katas.leapyears :refer [is-leap-year?]]))
 
 (def katas [
   {
@@ -9,6 +10,12 @@
     :fn (fn [x y]
       (fizzbuzz (Integer/parseInt x) (inc (Integer/parseInt y))))
     :arity 2
+  }
+  {
+    :name "leapyears"
+    :fn (fn [x]
+      (is-leap-year? (Integer/parseInt x)))
+    :arity 1
   }
 ])
 
