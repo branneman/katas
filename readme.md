@@ -10,6 +10,7 @@ lein run fizzbuzz 1 100
 lein run leapyears 2016
 lein run rpn-calculator 3 5 8 \* 7 + \*
 lein run roman-numerals 789
+lein run hangman airplane ajkei
 ```
 
 ## FizzBuzz
@@ -37,3 +38,9 @@ Source: https://josepaumard.github.io/katas/introductory/rpncalculator-kata.html
 Write a function to convert from decimal to roman numerals.
 
 Source: https://josepaumard.github.io/katas/intermediate/romannumerals-kata.html
+
+## ASCII Hangman
+
+Given two words as input, where the words each match `[a-z]+`, output the current state of the hangman game as ASCII art. The first is to be guessed, the second word is the already-guessed letters.
+
+Source: https://codegolf.stackexchange.com/questions/135936/ascii-hangman-in-progress

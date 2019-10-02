@@ -5,6 +5,7 @@
     [katas.leapyears :refer [is-leap-year?]]
     [katas.rpn-calculator :refer [rpn-evaluate]]
     [katas.roman-numerals :refer [decimal->roman]]
+    [katas.hangman :refer [hangman]]
     [clojure.string :refer [join]]))
 
 (def katas [
@@ -31,6 +32,11 @@
     :fn (fn [x]
       (decimal->roman (Integer/parseInt x)))
     :arity 1
+  }
+  {
+    :name "hangman"
+    :fn hangman
+    :arity 2
   }
 ])
 
