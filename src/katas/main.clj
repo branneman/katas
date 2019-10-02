@@ -2,7 +2,9 @@
   (:gen-class)
   (:require
     [katas.fizzbuzz :refer [fizzbuzz]]
-    [katas.leapyears :refer [is-leap-year?]]))
+    [katas.leapyears :refer [is-leap-year?]]
+    [katas.rpn-calculator :refer [rpn-evaluate]]
+    [clojure.string :refer [join]]))
 
 (def katas [
   {
@@ -16,6 +18,12 @@
     :fn (fn [x]
       (is-leap-year? (Integer/parseInt x)))
     :arity 1
+  }
+  {
+    :name "rpn-calculator"
+    :fn (fn [& xs]
+      (rpn-evaluate (join " " xs)))
+    :arity ##Inf
   }
 ])
 
