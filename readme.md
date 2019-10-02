@@ -9,6 +9,7 @@ lein test
 lein run fizzbuzz 1 100
 lein run leapyears 2016
 lein run rpn-calculator 3 5 8 \* 7 + \*
+lein run roman-numerals 789
 ```
 
 ## FizzBuzz
@@ -30,3 +31,9 @@ An RPN calculator program computes expressions written in Reverse Polish Notatio
 The RPN expression: `3 5 8 * 7 + *` equals: `3 * ((5 * 8) + 7)`
 
 Source: https://josepaumard.github.io/katas/introductory/rpncalculator-kata.html
+
+## Roman Numerals
+
+Write a function to convert from decimal to roman numerals.
+
+Source: https://josepaumard.github.io/katas/intermediate/romannumerals-kata.html

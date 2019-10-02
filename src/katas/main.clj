@@ -4,6 +4,7 @@
     [katas.fizzbuzz :refer [fizzbuzz]]
     [katas.leapyears :refer [is-leap-year?]]
     [katas.rpn-calculator :refer [rpn-evaluate]]
+    [katas.roman-numerals :refer [decimal->roman]]
     [clojure.string :refer [join]]))
 
 (def katas [
@@ -24,6 +25,12 @@
     :fn (fn [& xs]
       (rpn-evaluate (join " " xs)))
     :arity ##Inf
+  }
+  {
+    :name "roman-numerals"
+    :fn (fn [x]
+      (decimal->roman (Integer/parseInt x)))
+    :arity 1
   }
 ])
 
