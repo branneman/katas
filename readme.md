@@ -13,6 +13,7 @@ lein run roman-numerals 789
 lein run hangman airplane ajkei
 lein run wind N NE
 lein run data-munging-weather
+lein run data-munging-football
 ```
 
 ## FizzBuzz
@@ -56,8 +57,10 @@ Examples:
 - If I am cycling towards North, and the wind is going towards South, then I have a 0% overlap with its direction. The function should return `0` when given `N` and `S`.
 - If I am cycling towards North, and the wind is going towards North-East, then I have a 75% overlap with its direction. The function should return `0.75` when given `N` and `NE`.
 
-# Data Munging
+## Data Munging
 
 Part 1: In `bin/weather.dat` you’ll find daily weather data for Morristown, NJ for June 2002. Write a program to output the day number (column one) with the smallest temperature spread (the maximum temperature is the second column, the minimum the third column).
+
+Part 2: In `bin/football.dat` you'll find the results from the English Premier League for 2001/2. The columns labeled ‘F’ and ‘A’ contain the total number of goals scored for and against each team in that season. Write a program to output the name of the team with the smallest difference in ‘for’ and ‘against’ goals.
 
 Source: http://codekata.com/kata/kata04-data-munging/

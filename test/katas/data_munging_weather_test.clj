@@ -1,7 +1,7 @@
-(ns katas.data-munging-test
+(ns katas.data-munging-weather-test
   (:require
     [clojure.test :refer :all]
-    [katas.data-munging :refer :all]))
+    [katas.data-munging-weather :refer :all]))
 
 (deftest test-data-lines
   (is (= [] (data-lines "")))

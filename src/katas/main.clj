@@ -7,7 +7,8 @@
     [katas.roman-numerals :refer [decimal->roman]]
     [katas.hangman :refer [hangman]]
     [katas.wind :refer [cardinal-overlap]]
-    [katas.data-munging :refer [weather]]
+    [katas.data-munging-weather :refer [weather]]
+    [katas.data-munging-football :refer [football]]
     [clojure.string :refer [join]]))
 
 (def katas [
@@ -49,6 +50,12 @@
     :name "data-munging-weather"
     :fn (fn []
       (weather (slurp "./bin/weather.dat")))
+    :arity 0
+  }
+  {
+    :name "data-munging-football"
+    :fn (fn []
+      (football (slurp "./bin/football.dat")))
     :arity 0
   }
 ])

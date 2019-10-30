@@ -1,4 +1,4 @@
-(ns katas.data-munging
+(ns katas.data-munging-weather
   (:gen-class)
   (:require
     [clojure.string :refer [split trim]]))
